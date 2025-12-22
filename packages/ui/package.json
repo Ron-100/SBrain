@@ -1,18 +1,32 @@
 {
   "name": "@repo/ui",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "exports": {
-    "./counter": "./components/counter.ts",
-    "./header": "./components/header.ts",
-    "./setup-counter": "./utils/counter.ts"
+    ".": "./index.ts",
+    "./styles": "./styles/globals.css",
+    "./utils": "./utils/cn.ts",
+    "./icons": "./icons.ts",
+    "./button": "./components/Button.tsx",
+    "./input": "./components/Input.tsx",
+    "./modal": "./components/Modal.tsx",
+    "./theme-toggle": "./components/ThemeToggle.tsx",
+    "./loading-spinner": "./components/LoadingSpinner.tsx",
+    "./select": "./components/Select.tsx",
+    "./pagination": "./components/Pagination.tsx"
   },
-  "license": "MIT",
-  "scripts": {
-    "lint": "eslint \"**/*.ts\""
+  "peerDependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-icons": "^5.5.0"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^3.4.0"
   },
   "devDependencies": {
     "@repo/eslint-config": "*",
     "@repo/typescript-config": "*",
+    "@types/react": "^19.1.16",
     "eslint": "^8.57.0",
     "typescript": "5.5.4"
   }
